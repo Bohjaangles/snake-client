@@ -3,7 +3,7 @@ const net = require('net');
 const { setInterval } = require('timers');
 
 
-const connect = () => {
+const connect = function() {
   const conn = net.createConnection({
     host: '165.227.47.243',
     port: 50541
@@ -26,6 +26,6 @@ const connect = () => {
 };
 
 console.log('connecting...');
-connect();
+//connect();
 
-module.exports = { connect };
+module.exports = {connect} ;
